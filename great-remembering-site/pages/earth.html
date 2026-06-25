@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Earth Is Precious</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Cabin:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main>
+    <audio id="ambient-audio" autoplay loop preload="auto">
+      <source src="../assets/ambient-earth.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <button id="toggle-sound">🔈 Sound Off</button>
+
+    <section id="belief-core" style="margin-top: 3rem;">
+      <h2>The Earth Is Precious</h2>
+      <p><strong>Summary:</strong> Land does not belong to us—we belong to it.</p>
+      <p><strong>Deep Reflection:</strong> Borders are imaginary; life flows across them. Our responsibility is kinship, not control.</p>
+    </section>
+
+    <section id="live-the-belief" style="margin-top: 3rem;">
+      <h2>Live the Belief</h2>
+      <ul style="padding-left: 1.2rem;">
+        <li>🌱 Plant something — a tree, a herb, or even a wildflower.</li>
+        <li>🍂 Compost something — give back to the soil that sustains you.</li>
+        <li>🌳 Sit with a tree — listen to the wind in its leaves. Let time slow down.</li>
+        <li>🌎 Walk barefoot — even for a moment. Let the Earth feel you.</li>
+        <li>🧭 Find a border — and imagine it erased. Think: how would nature redraw this space?</li>
+      </ul>
+    </section>
+
+    <a href="../index.html">← Back to The Great Remembering</a>
+  </main>
+
+  <script>
+    const audio = document.getElementById('ambient-audio');
+    const toggleBtn = document.getElementById('toggle-sound');
+
+    audio.muted = true;
+    audio.volume = 0.1;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      audio.play().catch(() => {
+        document.body.addEventListener('click', () => {
+          audio.muted = false;
+          audio.play();
+          toggleBtn.textContent = '🔈 Sound Off';
+        }, { once: true });
+      });
+    });
+
+    toggleBtn.addEventListener('click', () => {
+      if (audio.muted) {
+        audio.muted = false;
+        toggleBtn.textContent = '🔈 Sound Off';
+        audio.play();
+      } else {
+        audio.muted = true;
+        toggleBtn.textContent = '🔇 Sound On';
+      }
+    });
+  </script>
+
+  <script>
+    fetch("../includes/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+  </script>
+  
+</body>
+</html>
+

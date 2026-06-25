@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith Is Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Cabin:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="header-container"></div>
+  <h1>Faith Is Personal</h1>
+  <p><em>Coming soon: deeper exploration of this belief.</em></p>
+  <a href="../index.html">← Back to The Great Remembering</a>
+  <script>
+  fetch("../includes/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-container").innerHTML = data;
+    });
+</script>
+</body>
+</html>
