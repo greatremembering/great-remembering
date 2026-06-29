@@ -6,13 +6,39 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "homepage"
-    label: "Homepage"
+  - name: "site"
+    label: "Site Content"
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "index.html"
+      - name: "homepage"
+        label: "Homepage"
+        file: "content/site.json"
+        format: "json"
         fields:
-          - label: "Page HTML"
-            name: "body"
-            widget: "text"
+          - label: "Site Title"
+            name: "title"
+            widget: "string"
+          - label: "Header Quote"
+            name: "quote"
+            widget: "string"
+          - label: "Vision"
+            name: "vision"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Quote", name: "quote", widget: "text" }
+          - label: "Beliefs Heading"
+            name: "beliefsHeading"
+            widget: "string"
+          - label: "Core Tenets"
+            name: "beliefs"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Deep Details", name: "details", widget: "text", required: false }
+              - { label: "More Link", name: "moreLink", widget: "string", required: false }
+          - label: "Footer Text"
+            name: "footer"
+            widget: "string"

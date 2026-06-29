@@ -1,0 +1,25 @@
+{
+  "title": "The Great Remembering",
+  "quote": "“To remember is to evolve.”",
+  "vision": {
+    "heading": "Vision",
+    "body": "This is an urgent restructuring of how life on Earth is organised, sustained, and shared...",
+    "quote": "Our vision is to reimagine and plant seeds to rebuild society around the principle that whatever we take, we must give back—through cycles that replenish, not destroy."
+  },
+  "beliefsHeading": "Core Tenets",
+  "beliefs": [
+    {
+      "title": "🌱 The Earth Is Precious:",
+      "summary": "This planet is a rare jewel in an unfathomably vast universe.",
+      "details": "Borders are artificial; life flows across them.",
+      "moreLink": "pages/earth.html"
+    },
+    {
+      "title": "♻️ Use, Replenish, Restore:",
+      "summary": "Waste is failure. Degeneration is violence.",
+      "details": "Every system must replenish more than it extracts.",
+      "moreLink": "pages/replenish.html"
+    }
+  ],
+  "footer": "©2025 The Great Remembering"
+}
