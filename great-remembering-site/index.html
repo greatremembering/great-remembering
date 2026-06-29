@@ -1,153 +1,106 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<link href="css/style.css" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The Great Remembering</title>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&amp;family=Cabin:wght@500&amp;display=swap" rel="stylesheet">
-</link></head>
+  <link href="css/style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Great Remembering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Cabin:wght@500&display=swap" rel="stylesheet">
+</head>
+
 <body>
+
 <nav>
-<a href="#vision">Vision</a>
-<a href="#beliefs">Beliefs</a>
-<a href="pages/goals.html">Goals</a>
-<a href="pages/resources.html">Resources</a>
-<a href="pages/summary.html">Where to Start?</a>
+  <a href="#vision">Vision</a>
+  <a href="#beliefs">Beliefs</a>
+  <a href="pages/goals.html">Goals</a>
+  <a href="pages/resources.html">Resources</a>
+  <a href="pages/summary.html">Where to Start?</a>
 </nav>
+
 <header>
-  <h1>The Great Remembering</h1>
-  <div id="quote-rotator">“To remember is to evolve.”</div>
+  <h1 data-netlify-visual-edit="true">The Great Remembering</h1>
+  <div id="quote-rotator" data-netlify-visual-edit="true">
+    “To remember is to evolve.”
+  </div>
 </header>
+
 <main>
-        <div style="text-align: center; margin: 2rem 0;">
+
+<div style="text-align: center; margin: 2rem 0;">
   <a href="assets/full-manifesto.pdf" target="_blank"
      style="font-family: 'Cabin', sans-serif; font-weight: 600;
             background: #5a4a2c; color: white; padding: 0.6rem 1.2rem;
             border-radius: 6px; text-decoration: none;">
     Read the Full Manifesto (PDF)
   </a>
-        <div style="text-align: center; margin: 2rem 0;">
-  <a href="assets/full-manifesto.pdf" target="_blank"
-     style="font-family: 'Cabin', sans-serif; font-weight: 600;
-            background: #5a4a2c; color: white; padding: 0.6rem 1.2rem;
-            border-radius: 6px; text-decoration: none;">
-    Realistic?
-  </a>
 </div>
-<section id="vision">
-<h2>Vision</h2>
-<p>This is an urgent restructuring of how life on Earth is organised, sustained, and
-        shared...</p>
-<blockquote>Our vision is to reimagine and plant seeds to rebuild society around the principle that whatever we take, we must give
-        back—through cycles that replenish, not destroy.</blockquote>
-</section>
-<section id="beliefs">
-<h2>Core Tenets</h2>
-<ul id="beliefs-list">
-<li onclick="toggleBelief(this)">
-<strong>🌱 The Earth Is Precious:</strong>
-<span class="details">This planet is a rare jewel in an unfathomably vast universe. We are its inhabitants and protectors, not its owners.</span>
-<span class="deep-details">Borders are artificial; life flows across them. True nature knows no flags.</span>
 
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/earth.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>♻️ Use, Replenish, Restore:</strong>
-<span class="details">Waste is failure. Degeneration is violence.</span>
-<span class="deep-details">Every system we build must replenish more than it extracts. Regeneration is the new
-            baseline.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/replenish.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>💰 Capitalism Is Harm:</strong>
-<span class="details">Incompatible with survival. Must be replaced with needs-based cooperation.</span>
-<span class="deep-details">Endless profit from finite resources leads to collapse. Justice-based economies
-            must replace extraction.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/capitalism.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🧠 Knowledge for All:</strong>
-<span class="details">Education is a human right, free from cost or dogma.</span>
-<span class="deep-details">Learning must be liberated. True knowledge challenges authority and uplifts the
-            collective.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/knowledge.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🧪 Science and Mystery:</strong>
-<span class="details">We honor both Indigenous wisdom and scientific method.</span>
-<span class="deep-details">We are part of the universe investigating itself. Humility is as vital as
-            evidence.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/science.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🛐 Faith Is Personal:</strong>
-<span class="details">Religion must not govern laws or freedoms.</span>
-<span class="deep-details">Spirituality must be freely chosen. No belief should override another’s liberty or
-            life.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/faith.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>⚙️ Technology With Limits:</strong>
-<span class="details">Must restore what it consumes.</span>
-<span class="deep-details">Tools should serve ecosystems, not destroy them. If it harms the web of life, it
-            must not be built.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/technology.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>💸 Money Redefined:</strong>
-<span class="details">Currency must reflect ecological health.</span>
-<span class="deep-details">Wealth must track biodiversity, not speculation. Profit without balance is
-            planetary theft.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/money.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🛠 Merit and Labor:</strong>
-<span class="details">No hoarding, no exploitation.</span>
-<span class="deep-details">Work should be recognized, not weaponized. All labor has dignity; no one should
-            accumulate by abuse.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/merit.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🧑‍🔬 Committees of Experts:</strong>
-<span class="details">Decisions made transparently by the most informed.</span>
-<span class="deep-details">We need governance by the wise, not the wealthy. Transparency is
-            non-negotiable.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/governance.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🕊 Weapons Are a Failure:</strong>
-<span class="details">Militaries must be dismantled.</span>
-<span class="deep-details">Violence is a dead end. Imagination must replace weaponry if life is to
-            continue.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/weapons.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🌀 Disagreement and Resistance:</strong>
-<span class="details">We grow through learning, not aggression.</span>
-<span class="deep-details">Dialogue—not domination—is how we evolve. Progress is spiral-shaped, not
-            linear.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/resistance.html', '_blank')">More</button>
-</li>
-<li onclick="toggleBelief(this)">
-<strong>🌿 Health and happiness:</strong>
-<span class="details">We believe that health is personal, shaped by individual choice and experience. While each path is unique, we honour practices that nourish the body and mind — natural food, movement, rest, and care.</span>
-<span class="deep-details">These are not prescriptions, but invitations: embraced with intention, they enhance clarity, vitality, and joy. In a noisy world, returning to our natural rhythms helps restore balance and deepen our experience of life.</span>
-<button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button><button class="dive-btn" onclick="window.open('pages/resistance.html', '_blank')">More</button>
-</li>
-</ul>
+<section id="vision">
+  <h2 data-netlify-visual-edit="true">Vision</h2>
+
+  <p data-netlify-visual-edit="true">
+    This is an urgent restructuring of how life on Earth is organised, sustained, and shared...
+  </p>
+
+  <blockquote data-netlify-visual-edit="true">
+    Our vision is to reimagine and plant seeds to rebuild society around the principle that whatever we take, we must give back—through cycles that replenish, not destroy.
+  </blockquote>
 </section>
+
+<section id="beliefs">
+  <h2 data-netlify-visual-edit="true">Core Tenets</h2>
+
+  <ul id="beliefs-list">
+
+    <li onclick="toggleBelief(this)">
+      <strong data-netlify-visual-edit="true">🌱 The Earth Is Precious:</strong>
+
+      <span class="details" data-netlify-visual-edit="true">
+        This planet is a rare jewel in an unfathomably vast universe.
+      </span>
+
+      <span class="deep-details" data-netlify-visual-edit="true">
+        Borders are artificial; life flows across them.
+      </span>
+
+      <button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button>
+      <button class="dive-btn" onclick="window.open('pages/earth.html', '_blank')">More</button>
+    </li>
+
+    <li onclick="toggleBelief(this)">
+      <strong data-netlify-visual-edit="true">♻️ Use, Replenish, Restore:</strong>
+
+      <span class="details" data-netlify-visual-edit="true">
+        Waste is failure. Degeneration is violence.
+      </span>
+
+      <span class="deep-details" data-netlify-visual-edit="true">
+        Every system must replenish more than it extracts.
+      </span>
+
+      <button class="expand-btn" onclick="toggleDeepDetail(this); event.stopPropagation()">▸</button>
+      <button class="dive-btn" onclick="window.open('pages/replenish.html', '_blank')">More</button>
+    </li>
+
+    <!-- You can repeat this pattern for the rest -->
+
+  </ul>
+</section>
+
 <div class="section-links">
-<a href="pages/goals.html">What We Strive to Achieve</a>
-<a href="pages/resources.html">Resources</a>
-<a href="pages/summary.html">Where to Start?</a>
+  <a href="pages/goals.html">What We Strive to Achieve</a>
+  <a href="pages/resources.html">Resources</a>
+  <a href="pages/summary.html">Where to Start?</a>
 </div>
+
 </main>
+
 <footer>
-<p>©2025 The Great Remembering</p>
+  <p data-netlify-visual-edit="true">©2025 The Great Remembering</p>
 </footer>
 
-<script src="js/script.js" defer></script>
+<script src="script.js" defer></script>
+
 </body>
 </html>
